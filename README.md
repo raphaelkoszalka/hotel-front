@@ -15,7 +15,7 @@ page reload, working with Angular EventEmitters at BroadcasterService.
 
 #### Still Missing
 Checked in person and guests that already leaved, still thinking if I am going to write
-this filter as two new endpoints at the back end of the application or a simple pipe filter
+this filter as two new endpoints at the back end of the application or a simple Angular Pipe filter
 at the front end.
 
 
