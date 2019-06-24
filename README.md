@@ -11,6 +11,7 @@ page reload, working with Angular EventEmitters at BroadcasterService.
 
 - Datepicker at date inputs
 - Input Masks
+- Toaster to handle XHR returns
 - Loader Component as in https://www.mattosinvestimentos.com/
 
 #### Still Missing
