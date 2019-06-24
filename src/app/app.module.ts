@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {ModuleWithProviders, NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,9 +12,7 @@ import {HttpService} from "./services/http.service";
 import {IndexResolver} from "./components/index/index.resolver";
 import {IndexComponent} from "./components/index/index.component";
 import {ROUTING} from "./app.route";
-
-
-
+import {BroadcasterService} from "./services/broadcaster.service";
 
 @NgModule({
   declarations: [
@@ -29,11 +27,13 @@ import {ROUTING} from "./app.route";
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ROUTING
+    ROUTING,
+
   ],
   providers: [
     HttpService,
-    IndexResolver
+    IndexResolver,
+    BroadcasterService
   ],
   bootstrap: [AppComponent]
 })

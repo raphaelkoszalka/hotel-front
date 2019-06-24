@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import 'rxjs';
 import {Observable, Observer} from "rxjs";
@@ -8,7 +8,9 @@ import {HttpService} from "../../services/http.service";
 @Injectable()
 export class IndexResolver implements Resolve<any> {
 
-  constructor(private http: HttpService) {}
+  constructor(private http: HttpService) {
+
+  }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Array<object>>  {
     return Observable.create((observer: Observer<any>) => {
