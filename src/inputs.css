@@ -1,0 +1,8 @@
+.hotel-input {
+  width: 90%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  padding: 10px;
+}

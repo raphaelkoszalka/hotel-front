@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* www.simplegrid.io */
+@import "grid.css";
+@import "buttons.css";
+@import "panel.css";
+@import "inputs.css";
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+body {
+  padding-top: 105px;
+}

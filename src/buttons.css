@@ -1,0 +1,23 @@
+.button-standard {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: aquamarine;
+  color: white;
+  border: 0
+}
+
+.button-standard:hover {
+  cursor: pointer;
+  background-color: #00C89B;
+}
+
+.button-sm {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.button-lg {
+  padding: 15px;
+  font-size: 1.2em;
+}

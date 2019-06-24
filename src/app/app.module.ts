@@ -1,16 +1,42 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {ModuleWithProviders, NgModule} from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CheckInComponent } from './components/check-in/check-in.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
+import { FormComponent } from './components/form/form.component';
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+import {HttpService} from "./services/http.service";
+import {IndexResolver} from "./components/index/index.resolver";
+import {IndexComponent} from "./components/index/index.component";
+import {ROUTING} from "./app.route";
+
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    CheckInComponent,
+    DatatableComponent,
+    FormComponent,
+    IndexComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
+    ROUTING
   ],
-  providers: [],
+  providers: [
+    HttpService,
+    IndexResolver
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,11 @@
+#wrapper {
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: inherit;
+  height: 75px;
+  background-color: #00C89B;
+}

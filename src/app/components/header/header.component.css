@@ -1,0 +1,25 @@
+#headerWrapper {
+    width: 100%;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: 75px;
+    background-color: #00C89B;
+}
+
+#logoContainer {
+    position: relative;
+    height: 75px;
+    width: 200px;
+    background-color: #008267;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#logoContainer img {
+    max-width: 70%;
+    padding-top: 10px;
+}

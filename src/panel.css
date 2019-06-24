@@ -1,0 +1,20 @@
+.panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #00C89B;
+  margin-top: 25px;
+}
+
+.panel-header {
+  background-color: #00C89B;
+  padding: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #FFF !important;
+}
+
+
+.panel-body {
+  padding: 15px;
+}
