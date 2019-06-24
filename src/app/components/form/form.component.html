@@ -7,30 +7,30 @@
         <div class="col-12">
           <button
               class="button-standard button-lg" type="submit"
-              (click)="postCheckIn(name, document, phone, enterDate, leaveDate, vehicle)">
+              (click)="postCheckIn(checkIn)">
             Novo Check In
           </button>
         </div>
         <div class="col-6">
           <h6>Data/Hora de entrada</h6>
-          <input type="datetime-local" required class="hotel-input" [(ngModel)]="enterDate" />
+          <input type="datetime-local" required class="hotel-input" [(ngModel)]="checkIn['enter_date']" />
         </div>
         <div class="col-6">
           <h6>Data/Hora de saída?</h6>
-          <input type="datetime-local" required class="hotel-input" [(ngModel)]="leaveDate" />
+          <input type="datetime-local" required class="hotel-input" [(ngModel)]="checkIn['leave_date']" />
         </div>
         <div class="col-3">
-          <input type="text" required class="hotel-input" placeholder="Nome" [(ngModel)]="name" />
+          <input type="text" required class="hotel-input" placeholder="Nome" [(ngModel)]="checkIn['name']" />
         </div>
         <div class="col-3">
-          <input type="text" required class="hotel-input" placeholder="Documento" [(ngModel)]="document" />
+          <input type="text" required class="hotel-input" placeholder="Documento" [(ngModel)]="checkIn['document']" />
         </div>
         <div class="col-3">
-          <input type="text" required class="hotel-input" placeholder="Telefone" [(ngModel)]="phone" />
+          <input type="text" required class="hotel-input" placeholder="Telefone" [(ngModel)]="checkIn['phone']" />
         </div>
         <div class="col-3">
           <h6>Possui veículo?</h6>
-          <input type="checkbox" required class="hotel-input" placeholder="" [(ngModel)]="vehicle" />
+          <input type="checkbox" required class="hotel-input" placeholder="" [(ngModel)]="checkIn['vehicle']" />
         </div>
     </div>
   </div>

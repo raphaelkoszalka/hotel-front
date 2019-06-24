@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {HttpService} from "../../services/http.service";
 import {AppConstants} from "../../app.constants";
+import {FormModel} from "./form.model";
 
 @Component({
   selector: 'app-form',
@@ -9,30 +10,13 @@ import {AppConstants} from "../../app.constants";
 })
 export class FormComponent  {
 
-  private name: string;
-  private document: string;
-  private phone: string;
-  private enterDate: string;
-  private leaveDate: string;
-  private vehicle: boolean;
-
+  private checkIn: FormModel = new FormModel();
 
   constructor(private http: HttpService) { }
 
-  public postCheckIn(name: string, document: string, phone: string,
-                     enterDate: string, leaveDate: string, vehicle: boolean): void {
-
-    const checkInData = {
-      name: name,
-      document: document,
-      phone: phone,
-      enterDate: enterDate,
-      leaveDate: leaveDate,
-      vehicle: vehicle,
-      bill: 0
-    };
-
-    this.http.post(AppConstants.API_BASE  + AppConstants.APP_POST, checkInData).subscribe( (res) => console.log(res));
+  public postCheckIn(checkIn): void {
+    this.http.post(AppConstants.API_BASE  + AppConstants.APP_POST, checkIn)
+    .subscribe( (res) => console.log(res), (err) => console.error(err));
   }
 
 }
