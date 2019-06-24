@@ -4,7 +4,6 @@ import {ModuleWithProviders, NgModule} from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CheckInComponent } from './components/check-in/check-in.component';
 import { DatatableComponent } from './components/datatable/datatable.component';
 import { FormComponent } from './components/form/form.component';
 import {HttpClientModule} from "@angular/common/http";
@@ -22,7 +21,6 @@ import {ROUTING} from "./app.route";
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CheckInComponent,
     DatatableComponent,
     FormComponent,
     IndexComponent
