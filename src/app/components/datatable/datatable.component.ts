@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {HttpService} from "../../services/http.service";
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-datatable',
@@ -8,9 +7,13 @@ import {HttpService} from "../../services/http.service";
 })
 export class DatatableComponent implements OnInit {
 
-  constructor(private _http: HttpService) { }
+  @Input()
+  private guests: object[];
+
+  constructor() { }
 
   ngOnInit() {
+    console.log(this.guests);
   }
 
 }

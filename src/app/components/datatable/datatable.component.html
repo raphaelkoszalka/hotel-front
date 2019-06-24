@@ -2,5 +2,20 @@
   <div class="panel-header">
     <h4>Consultas</h4>
   </div>
-  <div class="panel-body"></div>
+  <div class="panel-body">
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">ID</div>
+        <div class="col col-2">Hóspede</div>
+        <div class="col col-3">Documento</div>
+        <div class="col col-4">Total a pagar</div>
+      </li>
+      <li class="table-row" *ngFor="let guest of guests; let ind = index">
+        <div class="col col-1" data-label="ID">{{guest['person']['person_id']}}</div>
+        <div class="col col-2" data-label="Hóspede">{{guest['person']['personName']}}</div>
+        <div class="col col-3" data-label="Documento">{{guest['person']['personDocument']}}</div>
+        <div class="col col-4" data-label="Total a pagar">{{guest['bill']}}</div>
+      </li>
+    </ul>
+  </div>
 </div>
