@@ -10,6 +10,7 @@ page reload, working with Angular EventEmitters at BroadcasterService.
 ### To Do
 
 - Datepicker at date inputs
+- Input Masks
 - Loader Component as in https://www.mattosinvestimentos.com/
 
 #### Still Missing
