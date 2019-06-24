@@ -14,7 +14,6 @@ export class IndexComponent {
 
   constructor(private router: Router, private route: ActivatedRoute) {
     this.checkIns = route['data']['_value']['checkIns'];
-    console.log(this.checkIns);
   }
 
 }

@@ -14,6 +14,8 @@ export class HttpService {
   }
 
   public post(endpoint: string, data: object): Observable<any>  {
+    console.log(JSON.stringify(data));
+    debugger;
     return this.http.request('POST', endpoint, data);
   }
 

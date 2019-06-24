@@ -4,35 +4,34 @@
       <h4>Novo Check In</h4>
     </div>
     <div class="panel-body">
-      <form>
         <div class="col-12">
-          <button class="button-standard button-lg" type="submit">Novo Check In</button>
+          <button
+              class="button-standard button-lg" type="submit"
+              (click)="postCheckIn(name, document, phone, enterDate, leaveDate, vehicle)">
+            Novo Check In
+          </button>
         </div>
         <div class="col-6">
           <h6>Data/Hora de entrada</h6>
-          <input type="datetime-local" required class="hotel-input" placeholder="" />
+          <input type="datetime-local" required class="hotel-input" [(ngModel)]="enterDate" />
         </div>
         <div class="col-6">
-          <h6>Data/Hora de saída</h6>
-          <input type="datetime-local" required class="hotel-input" placeholder="" />
+          <h6>Data/Hora de saída?</h6>
+          <input type="datetime-local" required class="hotel-input" [(ngModel)]="leaveDate" />
         </div>
         <div class="col-3">
-          <h6>Nome</h6>
-          <input type="text" required class="hotel-input" placeholder="" />
+          <input type="text" required class="hotel-input" placeholder="Nome" [(ngModel)]="name" />
         </div>
         <div class="col-3">
-          <h6>Documento</h6>
-          <input type="text" required class="hotel-input" placeholder="" />
+          <input type="text" required class="hotel-input" placeholder="Documento" [(ngModel)]="document" />
         </div>
         <div class="col-3">
-          <h6>Telefone</h6>
-          <input type="text" required class="hotel-input" placeholder="" />
+          <input type="text" required class="hotel-input" placeholder="Telefone" [(ngModel)]="phone" />
         </div>
         <div class="col-3">
           <h6>Possui veículo?</h6>
-          <input type="checkbox" required class="hotel-input" placeholder="" />
+          <input type="checkbox" required class="hotel-input" placeholder="" [(ngModel)]="vehicle" />
         </div>
-      </form>
     </div>
   </div>
 </div>
