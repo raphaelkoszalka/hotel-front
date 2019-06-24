@@ -7,5 +7,10 @@ footer {
   left: 0;
   width: inherit;
   height: 75px;
-  background-color: #00C89B;
+  background-color: #008c6c;
+  border-top: 2px solid #00785d;
+}
+h6 {
+  text-align: center;
+  color: #FFF;
 }

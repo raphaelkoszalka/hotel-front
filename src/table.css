@@ -13,6 +13,8 @@ li {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-family: 'Raleway', sans-serif !important;
+  color: white !important;;
+  font-weight: bold;
 }
 .table-row {
   background-color: #ffffff;
