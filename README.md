@@ -9,6 +9,7 @@ page reload, working with Angular EventEmitters at BroadcasterService.
 
 ### To Do
 
+- e2e tests
 - Datepicker at date inputs
 - Input Masks
 - Toaster to handle XHR returns
