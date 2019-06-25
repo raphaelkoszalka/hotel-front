@@ -17,6 +17,5 @@ Checked in person and guests that already leaved, still thinking if I am going t
 this filter as two new endpoints at the back end of the application or a simple pipe filter
 at the front end.
 
-
 #### Doubts
 rmkoszalka@gmail.com

@@ -13,7 +13,7 @@ export class IndexResolver implements Resolve<any> {
   }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Array<object>>  {
-    return Observable.create((observer: Observer<any>) => {
+    return new Observable((observer: Observer<any>) => {
       this.http.get(AppConstants.API_BASE + AppConstants.APP_GET)
       .subscribe(
           (res) => { observer.next(res); observer.complete(); },
