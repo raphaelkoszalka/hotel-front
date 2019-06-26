@@ -1,5 +1,3 @@
-## Hotel Front End
-
 ## Important note
 Since of my available time being extremely low this last few days, as of I am currently working, 
 I chose to focus on the application architecture instead of writing the business rules mentioned
@@ -8,6 +6,9 @@ architecture is a better way to show my skills as a developer.
 
 Angular 8 component to check in new guests and also show a data table with users registered 
 at the hotel.
+
+## How to run
+Just ng serve, proxies for back end are already configured.
 
 ### Reactive
 This component is reactive, the table is refreshing itself at every new checkin without
