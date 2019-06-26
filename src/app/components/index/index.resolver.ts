@@ -8,9 +8,7 @@ import {HttpService} from "../../services/http.service";
 @Injectable()
 export class IndexResolver implements Resolve<any> {
 
-  constructor(private http: HttpService) {
-
-  }
+  constructor(private http: HttpService) {}
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Array<object>>  {
     return new Observable((observer: Observer<any>) => {
